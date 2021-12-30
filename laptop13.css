@@ -1,0 +1,36 @@
+@media (max-width: 1300px) {
+  .find-mentor .left h1,
+  .join-mentorkart .left h1 {
+    width: 100%;
+  }
+  .find-mentor-bg {
+    position: absolute;
+    left: 0px;
+    top: -30px;
+  }
+  .banners-section .banner .banner-content h1 {
+    width: 90%;
+  }
+  .our-blogs .our-blogs-head .blog-search,
+  .mentors .mentors-head .mentors-search,
+  .courses .courses-head .courses-search,
+  .our-blogs .our-blogs-head .tags,
+  .courses .courses-head .tags,
+  .mentors .mentors-head .tags {
+    width: 80%;
+  }
+
+  .banners-section .banner .overlay,
+  .banners-section,
+  .banners-section .swiper-container,
+  .banners-section .swiper-wrapper,
+  .banners-section img {
+    height: 300px;
+  }
+  .find-a-mentor .content .section-1 .card h2 {
+    font-size: 27px;
+  }
+  .find-a-mentor .content h1 {
+    font-size: 40px;
+  }
+}

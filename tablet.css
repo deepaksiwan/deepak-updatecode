@@ -1,0 +1,112 @@
+@media (max-width: 1050px) {
+  .showcase-heading {
+    font-size: 22px;
+  }
+
+  .find-a-mentor .content h1 {
+    font-size: 34px;
+  }
+  .showcase-para {
+    width: 100%;
+  }
+  .banners-section .banner .banner-content .btn {
+    font-size: 16px;
+  }
+  .be-a-mentor .plane-img {
+    top: 300px;
+    width: 200px;
+    right: 0;
+  }
+  .be-a-mentor .rocket-img {
+    height: 400px;
+  }
+  .be-a-mentor .form-container {
+    background: rgba(255, 255, 255, 0.75);
+  }
+  .be-a-mentor .guru-img {
+    width: 50%;
+    height: auto;
+  }
+  .our-blogs .our-blogs-head .blog-search,
+  .mentors .mentors-head .mentors-search,
+  .courses .courses-head .courses-search {
+    width: 80%;
+  }
+  @media (max-width: 800px) {
+    .showcase-card h2 {
+      font-size: 25px;
+    }
+    .find-mentor-bg {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+    .programs .poly-2 {
+      left: 90%;
+    }
+    .testimonials-section .testimonial-card .poly-1 {
+      right: -10px;
+    }
+    .testimonials-section .right h1 {
+      width: 100%;
+    }
+
+    /* BANNERS */
+    .youtube-section .swiper-container,
+    .youtube-section .swiper-wrapper {
+      height: 300px;
+    }
+    .banners-section,
+    .banners-section .swiper-container,
+    .banners-section .swiper-wrapper,
+    .banners-section img,
+    .banners-section .banner .overlay,
+    .youtube-video,
+    .youtube-video iframe {
+      height: 250px;
+    }
+    .banners-section .banner .banner-content {
+      padding: 0 3rem !important;
+    }
+    .banners-section .banner .banner-content h1 {
+      font-size: 28px;
+      width: 90%;
+    }
+    .banners-section .banner .banner-content .btn {
+      font-size: 16px;
+      border-radius: 25px;
+    }
+    @media (max-width: 767px) {
+      .find-a-mentor .section-3 {
+        text-align: center !important;
+      }
+      .mentor-profile .section-1 .col-md-9 h2,
+      .mentor-profile .section-1 .col-md-9 p {
+        text-align: center;
+      }
+      .our-blogs .our-blogs-head .blog-search,
+      .mentors .mentors-head .mentors-search,
+      .courses .courses-head .courses-search,
+      .our-blogs .our-blogs-head .tags,
+      .courses .courses-head .tags,
+      .mentors .mentors-head .tags {
+        width: 95%;
+      }
+      .showcase-section,
+      .showcase-section .left {
+        height: auto;
+      }
+      .showcase-section .right img {
+        width: 50%;
+      }
+      .find-mentor .swiper-container {
+        width: 100vw;
+      }
+      .find-mentor-bg {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+    }
+  }
+}

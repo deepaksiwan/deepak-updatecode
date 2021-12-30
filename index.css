@@ -1,0 +1,1926 @@
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fffdf8 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400 !important;
+  min-height: 12vh;
+  padding: 15px auto !important;
+  z-index: 5000;
+}
+a {
+  text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .dropdown .heading,
+.showcase-links .navbar-nav .nav-link {
+  color: #333333 !important;
+  font-size: 14.5px !important;
+  font-weight: 500;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+.navbar-light .navbar-nav .dropdown .dropdown-item {
+  background: #fff;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.showcase-links .navbar-nav .nav-link:hover {
+  transform: scale(1.025);
+}
+.navbar-light .navbar-nav .social-nav-link {
+  /* border: 2px solid #444444 !important; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.showcase-links .navbar-nav .social-nav-link i {
+  font-size: 20px !important;
+  font-weight: 600;
+}
+.navbar-light .navbar-btn .nav-link {
+  background-color: #f07867;
+  margin-right: 0rem;
+  padding: 4px 10px !important;
+  color: #fffdf8 !important;
+  border-radius: 5px;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  transform: scale(1) !important;
+  transition: all 0.3s ease !important;
+  min-width: 100px;
+  font-weight: 700 !important;
+}
+.navbar-light .navbar-btn .nav-link:hover {
+  transform: scale(1.03) !important;
+}
+.showcase-section {
+  position: relative;
+  background: #fffdf8;
+  margin-top: 12vh;
+  height: calc(100vh - 12vh);
+}
+.showcase-links {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid #3d3d3d;
+  padding: 10px;
+  border-radius: 40px;
+}
+.showcase-links .navbar-nav .nav-link .fab {
+  font-size: 30px !important;
+}
+
+.showcase-section .left,
+.showcase-section .right {
+  height: 88vh;
+}
+.showcase-section .right {
+  position: relative;
+}
+.showcase-section .right .right-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.showcase-section .right img {
+  width: 95%;
+  margin: auto;
+}
+.showcase-heading {
+  color: #333;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22.5px;
+}
+.showcase-heading sup {
+  font-size: smaller;
+}
+.showcase-para {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 30px;
+}
+.showcase-para span {
+  color: #f07867;
+}
+.showcase-cards .showcase-card {
+  text-decoration: none;
+  color: #444;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.showcase-cards .btn.showcase-card:focus {
+  box-shadow: none;
+}
+.showcase-cards .showcase-card:hover {
+  transform: scale(1.03);
+}
+.showcase-card-top {
+  background: #fff;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+.mentor-profile .showcase-card-top p {
+  text-align: left;
+}
+.showcase-card-top span {
+  font-size: 10px;
+  color: #555;
+  font-weight: 500;
+}
+.showcase-card-top h2 {
+  margin-top: -8px;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+}
+.showcase-card-bottom {
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 600;
+  background: #f07867;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position: relative;
+  z-index: 1;
+  top: -30px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.showcase-card.two .showcase-card-bottom {
+  background: #4c4c4c;
+}
+.showcase-card-bottom .btn:focus,
+.showcase-card-bottom .btn:active:focus,
+.showcase-card-bottom .btn.active:focus,
+.modal-form legend .btn:focus,
+.modal-form legend .btn:active:focus,
+.modal-form legend .btn.active:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.facility-card {
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.2s ease-in;
+  color: #222 !important;
+}
+.facility-card:hover {
+  transform: scale(1.05);
+}
+.facility-img-container {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 50%;
+  border: 1.5px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.facility-img-container img {
+  width: 50%;
+}
+.facility-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* FIND MENTOR */
+/* .find-mentor {
+  background: #f4f4f4;
+} */
+.find-mentor .left,
+.join-mentorkart .left,
+.blogs-section,
+.testimonials-section,
+.organisation-left {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.find-mentor .left span,
+.join-mentorkart .left span,
+.blogs-section .container-xxl > span,
+.testimonials-section .right span,
+.organisation-left span,
+.youtube-section span,
+.brand-videos-section span,
+.subscription-section span {
+  font-weight: 700;
+  color: #6483f6;
+}
+.find-mentor .left h1,
+.join-mentorkart .left h1,
+.blogs-section h1,
+.testimonials-section .right h1,
+.organisation-left h1,
+.youtube-section h1,
+.brand-videos-section h1,
+.subscription-section h1 {
+  width: 50%;
+  font-size: 56px;
+  color: #333333;
+}
+.youtube-section h1,
+.brand-videos-section h1,
+.subscription-section h1 {
+  width: 100%;
+  margin-top: -10px;
+}
+.organisation-left h1 {
+  width: 100%;
+  text-align: left !important;
+  color: #333 !important;
+}
+.find-mentor .left p,
+.join-mentorkart .left p,
+.testimonials-section .right p,
+.organisation-left p {
+  font-size: 20px;
+  color: #333;
+}
+.find-mentor .left p.sec,
+.join-mentorkart .left p.sec,
+.blogs-section .container-xxl > p,
+.testimonials-section .right p.sec,
+.organisation-left p.sec,
+.testimonial-card .sec {
+  font-size: 16px !important;
+  color: rgba(51, 51, 51, 0.501557);
+}
+.find-mentor .left .btn {
+  background: #f07867;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+.btn-ani {
+  transform: scale(1);
+  transition: transform 0.2s ease-in;
+}
+.btn-ani:hover {
+  transform: scale(1.015);
+}
+.mentor-card-section {
+  position: relative;
+}
+.find-mentor-bg {
+  position: absolute;
+  left: -50px;
+  top: -20px;
+}
+.find-mentor .swiper-container {
+  height: 340px;
+  width: 60vw;
+}
+.find-mentor .swiper-wrapper {
+  height: 340px;
+}
+.find-mentor .mentor-card {
+  background: #fff;
+  border-radius: 20px;
+  border: 0.5px solid #000;
+}
+.find-mentor .mentor-card .img {
+  height: 240px;
+  width: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.find-mentor .mentor-card .category-tags .btn,
+.programs .programs-cards .category-tags .btn {
+  background-color: #222;
+  color: #fff !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+}
+.find-mentor .mentor-card img,
+.programs .programs-cards img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.find-mentor .mentor-card div h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  margin-bottom: -2.5px !important;
+}
+.find-mentor .mentor-card div span,
+.mentors-card .mentor-card div span,
+.courses .program-card p {
+  font-size: 14.5px;
+  color: #3d3d3d;
+}
+.mentors-card .mentor-card div span {
+  color: #f07867;
+}
+.find-mentor .mentor-card div span.view-profile {
+  color: #f07867;
+  font-weight: 400;
+  font-size: 15px;
+  transition: all 0.3s ease-in;
+}
+.find-mentor .mentor-card hr,
+.mentors-card .mentor-card hr {
+  margin: 0.5rem 0 1rem;
+}
+
+.find-mentor .mentor-card .btn-container .span-checks,
+.mentors-card .mentor-card .btn-container .span-checks {
+  color: #f07867;
+  font-size: 14.5px;
+  line-height: 12px;
+}
+.find-mentor .mentor-card .btn-container,
+.mentors-card .mentor-card .btn-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.find-mentor .mentor-card .about,
+.mentors-card .mentor-card .about {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #5c5c5c;
+}
+
+.find-mentor .mentor-card .mentor-card-btn,
+.mentors-card .mentor-card .mentor-card-btn {
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 4px 16px;
+  font-size: 14.5px;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  background: #f07867;
+  color: #fff;
+  border: none;
+}
+.find-mentor .mentor-card .mentor-card-btn:hover,
+.mentors-card .mentor-card .mentor-card-btn:hover {
+  transform: scale(1.01);
+}
+
+.find-mentor .mentor-card .mentor-card-btn span,
+.mentors-card .mentor-card .mentor-card-btn span {
+  font-size: 0.5rem;
+  color: #000;
+}
+.find-mentor .mentor-card .mentor-card-content,
+.mentors-card .mentor-card .mentor-card-content {
+  height: 240px;
+  width: 100%;
+  position: relative;
+}
+.find-mentor .view-all-btn,
+.join-section .join-card .signup-btn {
+  background: #f07867;
+  color: #fff;
+  border-radius: 30px;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  padding: 0.35rem 1rem;
+  width: 150px;
+  border: none;
+  margin: 2rem auto;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+.find-mentor .view-all-btn:hover,
+.join-section:hover .join-card:hover .signup-btn:hover,
+.more-articles-btn:hover {
+  transform: scale(1.02);
+}
+
+/* BANNERS */
+.banners-section .banner .overlay,
+.banners-section,
+.banners-section .swiper-container,
+.banners-section .swiper-wrapper,
+.banners-section img {
+  height: 350px;
+}
+.banner {
+  position: relative;
+}
+.banner img {
+  object-fit: cover;
+}
+.banners-section img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: -1;
+}
+.banners-section .banner .overlay {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+.banners-section .banner .banner-content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 6rem !important;
+}
+.banners-section .banner .banner-content h1 {
+  font-weight: 600 !important;
+  font-size: 37px;
+  width: 75%;
+}
+.banners-section .banner .banner-content .btn {
+  font-weight: 600 !important;
+  font-size: 20px;
+  border-radius: 50px;
+}
+/* JOIN MENTORKART  */
+.join-mentorkart .left .icon-container {
+  background: #f28a4b;
+  border-radius: 50%;
+  height: 65px;
+  width: 90px;
+}
+.join-mentorkart .join-cards .join-card {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  border-radius: 24px;
+  color: #fff;
+  position: relative;
+}
+.join-mentorkart .join-cards .one .join-card .sec-img {
+  position: absolute;
+  bottom: -28px;
+  left: 35%;
+  z-index: -1;
+}
+.join-mentorkart .join-cards .two .join-card .sec-img {
+  position: absolute;
+  top: -60px;
+  left: 60%;
+  z-index: -1;
+}
+.join-mentorkart .join-cards .three .join-card .sec-img {
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  z-index: -1;
+}
+
+.join-mentorkart .join-cards .one .join-card {
+  background: #f07867;
+}
+.join-mentorkart .join-cards .two .join-card {
+  background: #5b9dff;
+}
+.join-mentorkart .join-cards .three .join-card {
+  background: #f88e6c;
+}
+.join-mentorkart .join-cards .one .join-card .btn {
+  color: #f07867;
+}
+.join-mentorkart .join-cards .two .join-card .btn {
+  color: #5b9dff;
+}
+.join-mentorkart .join-cards .three .join-card .btn {
+  color: #f88e6c;
+}
+.join-mentorkart .join-cards .join-card span {
+  font-size: 16px;
+}
+.join-mentorkart .join-cards .join-card h2 {
+  font-weight: 600;
+  font-size: 28.5px;
+  margin-top: -8px;
+}
+.join-mentorkart .join-cards .join-card .btn {
+  background: #fff;
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: 600;
+}
+.ad-cards .swiper-container {
+  height: 300px;
+}
+.ad-cards .swiper-wrapper {
+  height: 300px;
+}
+.ad-card {
+  border-radius: 25px;
+  height: 300px;
+  overflow: hidden;
+}
+.ad-cards img {
+  height: 100%;
+  width: 100%;
+}
+
+/* PROGRAMS SECTIONS  */
+.programs {
+  background: #6483f6;
+  position: relative;
+}
+.programs .swiper-pagination-bullet {
+  background: transparent !important;
+  border: 2px solid #fff;
+}
+.programs .swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+.programs .oval-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.programs .oval-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.programs .plant {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+.programs .lamp {
+  position: absolute;
+  top: 0;
+  left: 70%;
+}
+.programs .poly-2 {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+}
+
+.programs .left {
+  color: #fff;
+}
+.programs .left h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+}
+.programs .left p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.programs .left .btn.btn-outline-primary {
+  font-weight: 600;
+  color: #fff;
+  border-color: #fff;
+}
+.programs .left .btn.btn-outline-primary:hover {
+  background: #fff;
+  color: #6483f6;
+}
+.programs .program-card {
+  height: 400px;
+  position: relative;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  background: linear-gradient(281.79deg, #ffffff -5.33%, #ffffff 102.53%);
+  border-radius: 10px;
+}
+.programs .program-card h2 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.programs .program-card h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.programs .program-card p {
+  font-size: 11px;
+  font-weight: 500;
+}
+.programs .program-card .enroll-btn {
+  position: absolute;
+  bottom: 20px;
+}
+.programs .program-card .btn,
+.courses .program-card .enroll-btn {
+  background: #f07867;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.programs .programs-cards .swiper-container {
+  height: 440px;
+}
+.details-section .details-card {
+  background: #fefefe;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  border-radius: 10px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.details-section .details-card h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #222;
+}
+.details-section .details-card p.lead {
+  font-size: 16.5px;
+  color: #3d3d3d;
+}
+/* PARTNERS  */
+.partners h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 40px;
+  text-align: center;
+}
+.partners .partners-div {
+  text-align: center;
+}
+.partners img {
+  /* opacity: 0.7; */
+  filter: grayscale(100%);
+  width: 80%;
+  /* transition: opacity 0.2s ease-in; */
+  transition: filter 0.2s ease-in;
+  cursor: pointer;
+}
+.partners img:hover {
+  /* opacity: 1; */
+  filter: grayscale(0);
+}
+
+/* TESTIMONIALS  */
+
+.testimonials-section .right h1 {
+  width: 80%;
+}
+.testimonials-section .swiper-button-prev:after,
+.testimonials-section .swiper-button-next:after {
+  background: #f07867;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 700;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-section .swiper-button-prev:after {
+  padding-right: 0.2rem;
+}
+
+.testimonials-section .swiper-button-next:after {
+  padding-left: 0.2rem;
+}
+
+.testimonials-section .swiper-button-prev,
+.testimonials-section .swiper-button-next {
+  width: 45px;
+  height: 45px;
+  top: auto;
+  bottom: 10px;
+}
+
+.testimonials-section .swiper-button-prev {
+  left: auto;
+  right: 70px;
+}
+.testimonials-section .swiper-button-next {
+  left: auto;
+  right: 10px;
+}
+.testimonials-section .testimonial-card {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background: #fffdf8;
+  border-radius: 8px;
+  position: relative;
+}
+.testimonials-section .testimonial-card .sec-bg-div {
+  border-radius: 8px;
+  background: #f07867;
+  height: 200px;
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.testimonials-section .testimonial-card .colons {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+}
+.testimonials-section .testimonial-card .poly-1 {
+  position: absolute;
+  top: 30%;
+  right: -20px;
+}
+.testimonials-section .testimonial-card .blue-dot {
+  position: absolute;
+  top: 40%;
+  right: 40px;
+}
+.testimonials-section .testimonial-card .circle {
+  position: absolute;
+  top: 83%;
+  left: -10px;
+}
+.testimonials-section .testimonial-card p {
+  font-size: 17.5px;
+  line-height: 32px;
+}
+.testimonials-section .testimonial-card .testi-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid #f07867;
+  overflow: hidden;
+}
+.testimonials-section .testimonial-card .testi-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonials-section .testimonial-card .testimonial-writer {
+  font-size: 16px;
+}
+.testimonials-section .testimonial-card .btn {
+  background: #f07867;
+  color: #fff;
+  border-radius: 50%;
+}
+
+/* BLOGS SECTION  */
+.blogs-section {
+  text-align: center;
+}
+.blogs-section .container-xxl > h1 {
+  width: 100%;
+}
+.blogs-section .blog .blog-top {
+  position: relative;
+}
+.blogs-section .blog .blog-top img {
+  width: 100%;
+}
+.blogs-section .blog .blog-top span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: 700;
+  font-weight: 12px;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.blogs-section .blog-bottom {
+  background-color: #fffdf8;
+  text-align: left;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.blogs-section .blog-bottom h3 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
+  width: 80%;
+}
+.blogs-section .blog-bottom p {
+  font-size: 16px;
+  color: #333;
+}
+.blogs-section .blog-bottom .far {
+  color: #6483f6;
+}
+/* FOOTER  */
+.footer {
+  background: #0f171e;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+.footer-div-1,
+.footer-div-2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-div-1 h3 {
+  font-weight: 400;
+  font-size: 40px;
+}
+.footer-div-1 p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-div-1 .form-control {
+  border-radius: 8px;
+}
+.footer-div-1 .btn {
+  border-radius: 8px;
+  background: #f07867;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+.footer-div-2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.footer-div-2 .contact {
+  color: #f07867;
+  text-transform: capitalize;
+  font-weight: 700;
+  display: inline-block;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-div-2 .footer-links {
+  color: #f07867 !important;
+  font-weight: 700;
+}
+.footer-div-2 .list-group-item {
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  background: transparent !important;
+  border: none !important;
+  padding: 0.35rem 0 !important;
+}
+
+.footer-div-2 h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.footer-div-2 .socials {
+  border-radius: 150px;
+  border: 0.65px solid #f07867;
+  width: 87%;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+.footer-div-2 .socials a:hover {
+  color: #f07867;
+}
+
+.footer-div-3 p {
+  font-size: 16.64px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.footer-div-3 p.sec {
+  color: rgba(255, 255, 255, 0.5);
+}
+.signup-modal {
+  height: 100%;
+  overflow-y: hidden;
+  width: 100%;
+  display: flex;
+}
+.signup-modal .btn.col-12 {
+  background-color: #f07867;
+  color: #fff;
+}
+.modal-img img {
+  width: 100%;
+  height: 100%;
+}
+.modal-container label {
+  font-weight: 500;
+}
+.signup-modal.hide {
+  display: none;
+}
+
+.react-tel-input .form-control {
+  height: unset !important ;
+  width: 100% !important;
+}
+.our-blogs,
+.courses,
+.be-a-mentor,
+.mentors,
+.mentor-profile {
+  font-family: 'Montserrat', sans-serif;
+}
+.our-blogs .our-blogs-head,
+.courses .courses-head,
+.mentors .mentors-head {
+  margin-top: 10vh !important;
+  background: linear-gradient(#fffdf8, #fffdf830);
+  /* background: #fffdf8; */
+}
+.our-blogs .our-blogs-head h1,
+.courses .courses-head h1,
+.mentors .mentors-head h1,
+.be-a-mentor h1 {
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+.our-blogs .our-blogs-head .blog-search,
+.mentors .mentors-head .mentors-search,
+.courses .courses-head .courses-search {
+  width: 50%;
+  margin: auto;
+  background: #fff;
+  color: #333;
+  padding: 4px;
+  border-radius: 8px;
+  position: relative;
+  border: 2px solid #f07867;
+}
+.our-blogs .our-blogs-head .blog-search input,
+.mentors .mentors-head .mentors-search input,
+.courses .courses-head .courses-search input {
+  align-items: center;
+  border: none;
+  width: 100%;
+  padding-left: 30px;
+  font-weight: 500;
+  font-size: 14.5px;
+  /* border-bottom: 1px solid red; */
+}
+.our-blogs .our-blogs-head .blog-search input:focus,
+.mentors .mentors-head .mentors-search input:focus,
+.courses .courses-head .courses-search input:focus {
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+}
+.our-blogs .our-blogs-head .blog-search i,
+.mentors .mentors-head .mentors-search i,
+.courses .courses-head .courses-search i {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  color: #f07867;
+  transform: translateY(-50%);
+  width: 25px;
+}
+.our-blogs .our-blogs-head .blog-search i,
+.mentors .mentors-head .mentors-search i,
+.courses .courses-head .courses-search i {
+  font-size: 18.5px;
+}
+.our-blogs .our-blogs-head .blog-search .btn,
+.mentors .mentors-head .mentors-search .btn,
+.courses .courses-head .courses-search .btn {
+  background: #f07867;
+  color: #fff;
+  font-weight: 600;
+}
+.our-blogs .our-blogs-head .tags,
+.courses .courses-head .tags,
+.mentors .mentors-head .tags {
+  width: 50%;
+  margin: auto;
+  font-weight: 600;
+}
+.our-blogs .our-blogs-head .tags li,
+.courses .courses-head .tags li,
+.mentors .mentors-head .tags li {
+  list-style: none;
+  margin-right: 10px;
+}
+.our-blogs .our-blogs-head .tags li .btn,
+.courses .courses-head .tags li .btn,
+.courses .mentor-card .category-tags .btn,
+.mentors-card .mentor-card .category-tags .btn,
+.find-mentor .category-tags .btn,
+.mentors .mentors-head .tags li .btn,
+.courses .program-card .category-tags .btn {
+  text-decoration: none;
+  color: #333 !important;
+  border: 1px solid #333;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.our-blogs .our-blogs-head .tags li .btn.show,
+.our-blogs .our-blogs-head .tags li .btn:hover,
+.mentors .mentors-head .tags li .btn.show,
+.mentors .mentors-head .tags li .btn:hover,
+.our-blogs .our-blogs-head .tags li a.show,
+.find-mentor .category-tags .btn,
+.mentors-card .mentor-card .category-tags .btn,
+.courses .mentor-card .category-tags .btn,
+.courses .courses-head .tags li .btn.show,
+.courses .courses-head .tags li .btn:hover {
+  background: #333;
+  color: #fff !important;
+}
+
+.find-mentor .category-tags .btn,
+.courses .mentor-card .category-tags .btn,
+.courses .mentor-card .category-tags .btn,
+.mentors-card .mentor-card .category-tags .btn,
+.courses .program-card .category-tags .btn,
+.programs .programs-cards .category-tags .btn {
+  font-size: 8.5px;
+}
+.programs .programs-cards .category-tags .btn {
+  font-size: 5.5px;
+  padding: 3px 4px;
+  border-radius: 2px;
+}
+.packages-description-homepage {
+  height: 55px !important;
+}
+.our-blogs>img,
+.mentors>img,
+.courses>img{
+  width: 100%;
+}
+
+.our-blogs .blogs-cards-one {
+  margin-top: -150px;
+}
+.our-blogs .blogs-cards-one .cards,
+.our-blogs .blogs-cards-two .cards {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.our-blogs .blogs-cards-one .cards .tag,
+.our-blogs .blogs-cards-two .cards .tag {
+  z-index: 2;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.our-blogs .blogs-cards-one .cards .tag:hover {
+  color: #333;
+  background: #fff;
+}
+.our-blogs .blogs-cards-one .cards .cards-content,
+.our-blogs .blogs-cards-two .cards .cards-content {
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: 0 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.our-blogs .blogs-cards-one .cards .cards-content p,
+.our-blogs .blogs-cards-two .cards .cards-content p {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.our-blogs .blogs-cards-one .cards .cards-content span,
+.our-blogs .blogs-cards-two .cards .cards-content span {
+  font-size: 14px;
+}
+.our-blogs .blogs-cards-two h2,
+.our-blogs .blogs-cards-one h2,
+.be-a-mentor h1 {
+  font-weight: 600;
+  font-size: 32px;
+}
+.our-blogs .blogs-cards-two .btn {
+  font-weight: 600;
+}
+
+.our-blogs .blogs-cards-two .cards .tag {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #333;
+  background: #fff;
+  font-weight: 600;
+}
+
+.our-blogs .footer img,
+.courses .footer img,
+.mentors .footer img {
+  height: 60px;
+  width: 75px;
+}
+
+.courses .courses-content .text-center h2 {
+  font-weight: 600;
+  border-bottom: 2.5px dotted #a4a4a4;
+  display: inline-block;
+  margin: auto;
+  padding: 0 20px 8px;
+}
+.courses .courses-content .cards .programs-card p {
+  font-size: 14.5px;
+}
+.be-a-mentor .container {
+  max-width: 950px;
+}
+.be-a-mentor h1,
+.faq h1,
+.mentor-profile h1 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #f07867;
+}
+.be-a-mentor .container .form-group > label {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0.25rem;
+}
+.be-a-mentor header,
+.about header,
+.our-team header,
+.find-a-mentor header,
+.faq header,
+.mentor-profile header {
+  margin-top: 10vh !important;
+  background: linear-gradient(#fffdf8, #fffdf830);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.be-a-mentor,
+.about,
+.our-team,
+.faq,
+.find-a-mentor,
+.mentor-profile {
+  position: relative;
+}
+.be-a-mentor header .container,
+.about header .container,
+.our-team header .container,
+.find-a-mentor header .container,
+.faq .container,
+.mentor-profile .container {
+  text-align: center;
+  position: relative;
+}
+.be-a-mentor .guru-img,
+.about .guru-img,
+.our-team .guru-img,
+.find-a-mentor .guru-img,
+.faq .guru-img,
+.mentor-profile .guru-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+}
+.find-a-mentor .guru-img {
+  width: 350px;
+  height: 350px;
+  bottom: -28px;
+}
+.be-a-mentor .plane-img {
+  position: absolute;
+  top: 500px;
+  width: 300px;
+  right: 0;
+  z-index: 0;
+}
+.be-a-mentor .rocket-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 700px;
+  z-index: 0;
+}
+.be-a-mentor .form-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.25);
+  z-index: 1;
+}
+.be-a-mentor input[type='text'],
+.be-a-mentor input[type='email'],
+.be-a-mentor input[type='date'],
+.be-a-mentor input[type='tel'],
+.be-a-mentor textarea,
+.be-a-mentor .css-yk16xz-control {
+  background-color: rgba(244, 244, 244, 0.25) !important;
+  /* color: #f07867; */
+}
+.be-a-mentor textarea:focus,
+.be-a-mentor .css-yk16xz-control:active,
+.be-a-mentor input[type='text']:focus,
+.be-a-mentor input[type='password']:focus,
+.be-a-mentor input[type='datetime']:focus,
+.be-a-mentor input[type='datetime-local']:focus,
+.be-a-mentor input[type='date']:focus,
+.be-a-mentor input[type='month']:focus,
+.be-a-mentor input[type='time']:focus,
+.be-a-mentor input[type='week']:focus,
+.be-a-mentor input[type='number']:focus,
+.be-a-mentor input[type='email']:focus,
+.be-a-mentor input[type='url']:focus,
+.be-a-mentor input[type='search']:focus,
+.be-a-mentor input[type='tel']:focus,
+.be-a-mentor input[type='color']:focus,
+.uneditable-input:focus {
+  border-color: rgba(240, 120, 103, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(240, 120, 103, 0.6);
+  outline: 0 none;
+}
+.mentors-card .mentor-card,
+.courses .program-card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.mentors-card .mentor-card .img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  position: relative;
+}
+.mentors-card .mentor-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+.courses .program-card img,
+.courses .program-card .img {
+  border-radius: 10px;
+  object-fit: fill;
+  height: 250px;
+  width: 100%;
+}
+
+.programs .programs-cards .category-tags .btn {
+  background: #222 !important;
+  color: #fff !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+}
+.courses .program-card .category-tags .btn {
+  background: #333 !important;
+  color: #fff !important;
+  letter-spacing: 1px;
+  border: none;
+}
+.find-mentor .mentor-card div h2,
+.mentors-card .mentor-card div h2,
+.courses .program-card div h2 {
+  color: #111;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: left;
+}
+.find-mentor .mentor-card div h6,
+.mentors-card .mentor-card div h6,
+.courses .program-card div h6 {
+  color: #111;
+  white-space: nowrap;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 14px;
+  letter-spacing: -1px;
+}
+
+.find-mentor .mentor-card div h6 span,
+.mentors-card .mentor-card div h6 span {
+  font-size: 11.5px;
+  color: #666;
+}
+.mentors-card .mentor-card .mentor-card-btn {
+  width: 98%;
+  margin: auto;
+  border-radius: 6px;
+}
+.mentors-card .left .btn {
+  font-size: 16px;
+}
+.mentors-card .mentor-card .mentor-card-content {
+  margin-left: 0 !important;
+}
+.mentors-card .mentor-card hr {
+  width: 60%;
+  margin: 0.5rem auto 1rem;
+}
+.mentors-card .swiper-container {
+  height: 350px;
+}
+.mentors-card .swiper-wrapper {
+  height: 350px;
+}
+.mentors-card-bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+.mentors-card .mentor-card .mentor-card-btn {
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about {
+  font-family: 'Montserrat', sans-serif;
+}
+.about header h1,
+.our-team header h1,
+.find-a-mentor .content h1,
+.find-a-mentor header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #f07867;
+}
+.find-a-mentor header h1 {
+  font-size: 60px;
+}
+.about header p {
+  font-size: 18px;
+}
+.about .btn.btn-lg {
+  border-radius: 40px;
+  transition: all 0.3s ease-in;
+  font-size: 18px;
+}
+.about .btn.btn-lg:hover {
+  transform: scale(1.05);
+}
+.about .section-1 h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f07867;
+}
+.about .section-1 p {
+  font-size: 20px;
+}
+.about .section-2,
+.about .section-4 {
+  background-color: rgba(253, 240, 233, 0.45);
+}
+.about .section-2 p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.about .section-2 p.my-4 {
+  font-size: 21px;
+  line-height: 30px;
+}
+.about .section-4 h2,
+.about .section-5 h2,
+.team h2 {
+  color: #f07867;
+  font-size: 35px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.about .section-5 p,
+.team p {
+  font-size: 18px;
+}
+.team img {
+  max-width: 400px;
+  max-height: 1200px;
+  margin: auto;
+}
+.team-alt {
+  background-color: rgba(253, 240, 233, 0.45);
+}
+.team span {
+  font-weight: 500;
+}
+.privacy-policy,
+.refund-policy,
+.terms-condi {
+  margin-top: 8vh;
+  background: #fefefe;
+}
+.privacy-policy .section,
+.terms-condi .section {
+  margin-bottom: 3rem !important;
+}
+.faq .container .accordion-button,
+.mentor-profile .accordion-button {
+  color: #f07867;
+}
+.faq .container .accordion-button:not(.collapsed),
+.mentor-profile .accordion-button:not(.collapsed) {
+  color: #f07867;
+  background-color: rgba(253, 240, 233, 0.3);
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.faq .container .accordion-button:not(.collapsed)::after,
+.mentor-profile .accordion-button:not(.collapsed)::after {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Feather-arrows-chevron-down.svg/1024px-Feather-arrows-chevron-down.svg.png') !important;
+}
+.faq .container .accordion-button:focus,
+.mentor-profile .accordion-button:focus {
+  box-shadow: none;
+}
+.faq .container .accordion-collapse.collapse.show,
+.mentor-profile .accordion-collapse.collapse.show {
+  border: 1px solid rgba(253, 240, 233);
+  border-top: none;
+}
+
+.mentor-profile .profile-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+.mentor-profile .section-3 h2 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.mentor-profile .section-3 p {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+.mentor-profile .pro-socials a,
+.mentor-profile .secondary a {
+  color: #000;
+}
+.mentor-profile ul {
+  padding-left: 0;
+}
+.mentor-profile li {
+  text-align: left;
+  list-style: none;
+}
+.mentor-profile .secondary,
+.mentor-profile .section-1 {
+  background-color: #fff;
+}
+.mentor-profile .showcase-card p {
+  font-size: 12px;
+}
+.mentor-profile .showcase-card p.font-lg {
+  font-size: 14px;
+}
+.mentor-profile .showcase-card h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mentor-profile .rating-sec .col-8 {
+  text-align: left;
+}
+.mentor-profile .accordion h4 {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+.mentor-profile .accordion p {
+  text-align: left;
+  font-weight: 400;
+  font-size: 15px;
+}
+.mentor-profile .accordion address {
+  font-size: 12.5px;
+  color: #5e5e5e;
+}
+.mentor-profile .accordion h6 {
+  font-weight: 17.5px;
+  font-weight: 600;
+}
+
+.single-blog .section-1 {
+  position: relative;
+  height: 350px;
+}
+.single-blog .section-1 img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.single-blog .section-1 .content {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+  height: 100% !important;
+}
+.single-blog .section-1 .content .container {
+  height: 100% !important;
+}
+.single-blog .section-1 .content .sec {
+  font-size: 1.25rem;
+}
+.single-blog .section-1 .content h1 {
+  font-size: 50px;
+}
+
+.react-tel-input .form-control {
+  min-height: calc(1.5em + 0.5rem + 2px);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+.be-a-mentor .btn-success,
+.book-sec .btn-primary {
+  color: #fff;
+  background-color: #f07867;
+  border-color: #f07867;
+  transform: scale(1);
+  transition: transform 0.3s ease-in;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.be-a-mentor .btn-success:hover,
+.book-sec .btn-primary:hover,
+.book-sec .btn-outline-primary:hover {
+  transform: scale(1.03);
+}
+.book-sec .btn-outline-primary {
+  color: #f07867;
+  border-color: #f07867;
+  transform: scale(1);
+  transition: transform 0.3s ease-in;
+}
+
+.book-sec .btn-outline-primary:hover {
+  background-color: #f07867;
+  color: #fff;
+}
+
+.find-a-mentor .content h1 {
+  color: #333;
+  width: 75%;
+  margin: auto;
+}
+.find-a-mentor .content .section-1 .card {
+  border-radius: 30px;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.find-a-mentor .content .section-1 .card h6 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.find-a-mentor .content .section-1 .card h2 {
+  font-weight: 800;
+  font-size: 38px;
+  margin-top: -5px;
+}
+.find-a-mentor .content .section-1 .card .btn {
+  background-color: #f07867;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 6px 18px;
+}
+.find-a-mentor .content .section-1 .card .btn:hover {
+  background-color: #ff5656;
+}
+.find-a-mentor .section-2 {
+  background-color: rgba(253, 240, 233, 0.45);
+}
+.find-a-mentor .section-2 h2,
+.find-a-mentor .section-3 h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.find-a-mentor .section-2 h1 {
+  font-size: 75px;
+  width: 100%;
+  margin-top: -18px;
+  margin-bottom: 2rem;
+}
+.find-a-mentor .section-2 p,
+.find-a-mentor .section-3 span {
+  line-height: 18px;
+  font-weight: 400;
+}
+.find-a-mentor .section-2 span {
+  font-weight: 600;
+  font-size: 16px;
+}
+.find-a-mentor .section-3 h2 {
+  margin-top: -5px;
+  margin-bottom: 1.5rem;
+}
+.find-a-mentor .section-3 .btn {
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+  border: 2px solid #000;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 4px 18px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.find-a-mentor .section-3 .btn i {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+}
+.find-a-mentor .section-3 .btn:hover {
+  background-color: #f07867;
+  color: #fff;
+  border-color: #f07867;
+}
+.find-a-mentor .section-3 .btn:hover i {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.find-a-mentor .section-3 p.sec {
+  font-weight: 700;
+  font-size: 18px;
+}
+.find-a-mentor .row-alt {
+  background-color: #fafafa;
+}
+
+.youtube-video {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.youtube-video,
+.youtube-video iframe {
+  width: 100% !important;
+  height: 350px !important;
+}
+
+.youtube-section .swiper-container,
+.youtube-section .swiper-wrapper {
+  height: 400px;
+}
+.subscription-section .swiper-container,
+.subscription-section .swiper-wrapper {
+  height: 550px !important;
+}
+.subscription-section .card {
+  height: 500px !important;
+  width:367px !important
+}
+.subscription-section h1 {
+  font-size: 44px;
+}
+.subscription-section .card {
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  border: 1.5px solid #333;
+}
+.subscription-section .card h6 {
+  font-size: 16px;
+  margin-top: 45px;
+  color: rgba(51, 51, 51, 0.501557);
+}
+.subscription-section .card span {
+  position: absolute;
+  left: -1px;
+  top: 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 12px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.subscription-section h2.price {
+  font-size: 25px;
+  margin-top: 6px;
+  font-weight: 700;
+}
+.subscription-section .card p {
+  color: #444;
+  font-size: 14px;
+}
+.subscription-section .card .bottom-subs {
+  position: absolute;
+  transform: translateX(-50%);
+  width: 90%;
+  left: 50%;
+  bottom: 15px;
+}
+.subscription-section .card .description {
+  line-height: 26px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.subscription-section .card .btn {
+  background-color: #333;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17.5px;
+}
+.be-a-mentor .form-container label,
+.be-a-mentor .form-container .btn {
+  font-weight: 600;
+}
+
+.signup-modal .form-control,
+.react-tel-input .flag-dropdown,
+.signup-modal .react-tel-input .selected-flag {
+  padding-left: 0;
+}
+.signup-modal .form-control,
+.signup-modal .react-tel-input .form-control {
+  border: none !important;
+  border-bottom: 1px solid #3d3d3d !important;
+  border-radius: 0;
+}
+.signup-modal .react-tel-input .form-control {
+  padding-left: 35px;
+}
+.react-tel-input .flag-dropdown,
+.signup-modal .react-tel-input .selected-flag {
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  padding-bottom: 5px !important;
+}
+.signup-modal .toggle-span {
+  color: #f07867;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.signup-modal .toggle-span:hover {
+  color: #f07867;
+  font-size: 16.5px;
+}
+.signup-modal .form-check-input {
+  margin-top: 6px !important;
+}
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+input[type='number']:focus,
+[type='text'].form-control:focus,
+[type='password'].form-control:focus,
+[type='email'].form-control:focus,
+[type='tel'].form-control:focus,
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+
+.password-div {
+  position: relative;
+}
+.password-div .btn {
+  position: absolute;
+  right: 10px;
+  bottom: -5px;
+}
+
+.subscription-section .hide {
+  display: none;
+}
+.subscription-section .toggle,
+.subscription-section .toggler {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.subscription-section .toggler {
+  color: #ddd;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.subscription-section .toggler-is-active {
+  color: #f07867;
+}
+
+.subscription-section .b {
+  display: block;
+}
+
+.subscription-section .toggle {
+  position: relative;
+  width: 65px;
+  height: 25px;
+  border-radius: 100px;
+  background-color: #f07867;
+  overflow: hidden;
+  box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.05);
+}
+
+.subscription-section .check {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 6;
+}
+
+.subscription-section .check:checked ~ .switch {
+  right: 2px;
+  left: 57.5%;
+  transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-property: left, right;
+  transition-delay: 0.08s, 0s;
+}
+
+.subscription-section .switch {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 57.5%;
+  background-color: #fff;
+  border-radius: 36px;
+  z-index: 1;
+  transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-property: left, right;
+  transition-delay: 0s, 0.08s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* MY CSS NOW ONWARDS */
+
+/* .justToExpand {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+} */
+/* .be_all_equal{ */
+  /* height: 100%; */
+/* } */
